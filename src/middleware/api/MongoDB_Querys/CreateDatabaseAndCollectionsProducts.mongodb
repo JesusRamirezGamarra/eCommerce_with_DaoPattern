@@ -1,0 +1,18 @@
+// MongoDB Playground
+const database = 'CODERHOUSE_eCommerce_LJRG';
+const collectionProducts = 'products';
+// Create a new database.
+use(database);
+// The prototype form to create a regular collection:
+db.createCollection( collectionProducts,
+    {
+    id: Number,
+    timestamp: Timestamp,
+    name: String,
+    description: String,
+    code: String,
+    thumbnail: String,
+    price: Double,
+    stock: Number
+    }
+)
